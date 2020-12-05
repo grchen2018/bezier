@@ -1,5 +1,7 @@
 # 二阶贝塞尔曲线插值器
 
+<img src="https://github.com/grchen2018/bezier/blob/master/app/preview.gif" width="360">
+
 ## gradle
 To get a Git project into your build:
 
