@@ -1,0 +1,3 @@
+include ':beziercurve'
+include ':app'
+rootProject.name='bezier'
