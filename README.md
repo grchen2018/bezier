@@ -1,9 +1,7 @@
-# bezier
-二阶贝塞尔曲线插值器
+# 二阶贝塞尔曲线插值器
 
+## gradle
 To get a Git project into your build:
-
-gradle
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
@@ -22,7 +20,8 @@ Step 2. Add the dependency
 	}
   
   
-使用
+# 使用
+``` java
 PointF control1 = new PointF(0f, 0.5f);
 PointF control2 = new PointF(1f, 0.5f);
 PointF start = new PointF(0f, 0f);
@@ -32,3 +31,4 @@ ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(imageView, View.TRANSLATI
 objectAnimator.setDuration(4000);
 objectAnimator.setInterpolator(interpolator);
 objectAnimator.start();
+```
