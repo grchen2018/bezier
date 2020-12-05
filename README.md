@@ -22,3 +22,13 @@ Step 2. Add the dependency
 	}
   
   
+使用
+PointF control1 = new PointF(0f, 0.5f);
+PointF control2 = new PointF(1f, 0.5f);
+PointF start = new PointF(0f, 0f);
+PointF end = new PointF(1f, 1f);
+Interpolator interpolator = new BezierCurveInterpolator(control1, control2, start, end);
+ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(imageView, View.TRANSLATION_X, 0f, 1080f);
+objectAnimator.setDuration(4000);
+objectAnimator.setInterpolator(interpolator);
+objectAnimator.start();
