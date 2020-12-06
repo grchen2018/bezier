@@ -90,7 +90,7 @@ public class BezierCurveInterpolator implements Interpolator {
             }
 
         }
-        y = Math.abs(y - start.y) / Math.abs(end.y - start.y);
+        y = (y - start.y) / (end.y - start.y);
 //        Log.d("TAG", "getInterpolation: y: " + y);
         return y;
     }
